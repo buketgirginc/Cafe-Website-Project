@@ -1,0 +1,321 @@
+ body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: black;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-top: 50px;
+            color:white;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .menu-item {
+            margin: 10px;
+            text-align: center;
+            width: 250px; /* Sabit genişlik */
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto; /* Otomatik yükseklik */
+            border-radius: 10px;
+        }
+
+        .menu-item h2 {
+            font-size: 1.5em;
+            margin: 10px 0 5px;
+             color:white;
+        }
+
+        .menu-item p {
+            font-size: 1.2em;
+            color: #555;
+        }
+                body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: Black;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-top: 50px; 
+            color: white;
+            font-family: nunito;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7); 
+        }
+ .menu {
+            background-color: orange; /* Turuncu renk */
+            overflow: hidden;
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .menu a:hover {
+            background-color: #ff8c00;
+            color: black;
+        }
+
+        /* Menü butonu (kapatıp açmak için) */
+        .menu .icon {
+            display: none;
+            color: white;
+            padding: 14px 16px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        /* Mobil cihazlar için (alt alta ve kapalı menü) */
+        @media screen and (max-width: 768px) {
+            .menu a {
+                float: none;
+                display: none;
+                text-align: left;
+                width: 100%;
+            }
+
+            .menu a.icon {
+                display: block;
+                float: right;
+            }
+
+            .menu.responsive {position: relative;}
+            .menu.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .menu.responsive a {
+                display: block;
+                text-align: left;
+            }
+        }
+.menu-item {
+    margin: 20px;
+    text-align: center;
+    width: 250px; /* Sabit genişlik */
+    border: 1px solid #ddd; /* Kenarlık */
+    border-radius: 10px; /* Köşe yuvarlama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge */
+    transition: transform 0.3s; /* Animasyon */
+    background-color: #fff; /* Arka plan rengi */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Hover efekt */
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px; /* Sabit yükseklik */
+    border-top-left-radius: 10px; /* Üst sol köşe yuvarlama */
+    border-top-right-radius: 10px; /* Üst sağ köşe yuvarlama */
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+    color: #333; /* Başlık rengi */
+}
+
+.menu-item ul {
+    list-style-type: none; /* Madde işareti kaldır */
+    padding: 0; /* Dış boşluk sıfırla */
+}
+
+.menu-item li {
+    font-size: 1.2em;
+    color: #555; /* Fiyat rengi */
+    margin: 5px 0; /* Alt boşluk */
+}
+
+input[type="number"] {
+    width: 50px; /* Genişlik */
+    margin-top: 10px; /* Üst boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Köşe yuvarlama */
+    text-align: center; /* Metin ortalama */
+    text-decoration-color: white;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px; /* Üst boşluk */
+}
+
+.btn-custom {
+    background-color: #5cb85c; /* Buton rengi */
+    color: white; /* Buton metin rengi */
+    padding: 10px 20px; /* Buton iç boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Köşe yuvarlama */
+    cursor: pointer; /* Fare imleci */
+    transition: background-color 0.3s; /* Animasyon */
+}
+
+.btn-custom:hover {
+    background-color: #4cae4c; /* Hover rengi */
+}
+
+   
+
+#renkdegis:hover {
+background-color:lightgreen;
+color:#fff;}
+
+#renkdegis:hover ul {
+color:lightgreen;
+}
+
+input[type="checkbox"] {
+            display: none;
+            overflow: hidden;
+        }
+
+input[type="number"] {
+            width: 50px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            display: flex; /* Başlangıçta gizle */
+        }
+        @media screen and (max-width: 1200px) {
+            .menu-item {
+                width: 200px;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .menu-item {
+                width: 100%;
+                margin: 1.4rem;
+            }
+
+            .menu-container {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            #totalPrice {
+                font-size: 1.5em;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .btn-custom {
+                padding: 5px 10px;
+                font-size: 0.9em;
+            }
+
+           #totalPrice {
+    color: black;
+    font-size: 2em;
+    margin-top: 20px;
+}
+            }
+            .modal {
+                display: none; 
+                position: fixed; 
+                z-index: 1000; 
+                left: 0;
+                top: 0;
+                width: 100%; 
+                height: 100%; 
+                overflow: auto; 
+                background-color: rgba(0, 0, 0, 0.5); 
+            }
+            
+            .modal-content {
+                background-color: #fff;
+                margin: 5% auto; 
+                padding: 20px;
+                border-radius: 8px;
+                width: 80%; 
+                max-width: 400px; 
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                position: relative; /* Kapatma butonu için */
+                transition: transform 0.3s ease-in-out; /* Açılma animasyonu */
+                transform: scale(0.8); /* Başlangıçta küçültme efekti */
+            }
+            
+            .modal-content.show {
+                transform: scale(1); /* Açıldığında normal boyuta geçiş */
+            }
+            
+            /* Kapatma butonu */
+            .close {
+                color: #333;
+                float: right;
+                font-size: 24px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+            }
+            
+            /* Modal içindeki başlık ve fiyat */
+            #itemName {
+                font-size: 1.5em;
+                margin-bottom: 10px;
+                color: #333;
+            }
+            
+            #itemPrice {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+                color: #555;
+            }
+            
+            /* Toplam fiyat */
+            #cartTotalPrice {
+                font-size: 1.5em;
+                margin-top: 20px;
+                color:white;
+            }
+            
+            /* Modal içindeki butonlar */
+            .btn-custom {
+                background-color: #5cb85c; /* Buton rengi */
+                color: white; /* Buton metin rengi */
+                padding: 10px 20px; /* Buton iç boşluk */
+                border: none; /* Kenarlık yok */
+                border-radius: 5px; /* Köşe yuvarlama */
+                cursor: pointer; /* Fare imleci */
+                transition: background-color 0.3s; /* Animasyon */
+            }
+            
+            .btn-custom:hover {
+                background-color: #4cae4c; /* Hover rengi */
+            }
